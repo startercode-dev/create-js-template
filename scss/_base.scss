@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+    font-weight: 400;
+    // font-family: 'Nunito Sans', sans-serif;
+    // min-height: calc(100vh - 2 * 4vw);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
