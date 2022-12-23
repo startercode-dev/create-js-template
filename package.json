@@ -4,7 +4,7 @@
     "description": "",
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
-        "start": "parcel index.html --dist-dir src/dist --open safari",
+        "start": "parcel index.html --dist-dir src/dist",
         "build": "parcel build index.html --dist-dir src/dist"
     },
     "repository": {
