@@ -8,10 +8,5 @@ Install all dependencies and get started:
 
 ```
 npm install
-```
-
-then
-
-```
-npm start
+npm run dev
 ```
