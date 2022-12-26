@@ -7,6 +7,6 @@ Simple Javascript/HTML/SCSS template for getting ideas down on frontend focused 
 Install all dependencies and get started:
 
 ```
-npm install
+npm i
 npm run dev
 ```
