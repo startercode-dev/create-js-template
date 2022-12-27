@@ -9,21 +9,15 @@
     box-sizing: inherit;
 }
 
-html,
-body {
-    min-height: 100%;
-}
-
 html {
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
 body {
-    line-height: 1;
+    min-height: 100%;
     font-weight: 400;
     font-family: 'Nunito Sans', sans-serif;
-    // min-height: calc(100vh - 2 * 4vw);
 }
 
 .flex {
