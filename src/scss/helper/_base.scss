@@ -1,23 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
 }
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
     min-height: 100%;
     font-weight: 400;
     font-family: 'Nunito Sans', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
 }
 
 .flex {
@@ -27,14 +35,6 @@ body {
 .flex--column {
     display: flex;
     flex-direction: column;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.center {
-    justify-content: center;
 }
 
 .grid {
