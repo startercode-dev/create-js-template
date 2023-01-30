@@ -1,2 +1,38 @@
 @use '../helper/variables' as *;
 @use '../helper/mixin' as *;
+
+
+//LAYOUT
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid--2cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5cols {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
