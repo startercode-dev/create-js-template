@@ -1,7 +1,8 @@
 {
-    "name": "js-template",
+    "name": "create-js-template",
     "version": "1.0.0",
-    "description": "",
+    "description": "js/html/scss starting template",
+    "bin": "./bin/cli.js",
     "browserslist": "> 0.5%, last 2 versions, not dead",
     "scripts": {
         "dev": "parcel index.html --dist-dir src/dist --open",
