@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/startercode-dev/js-template.git"
+    "url": "git+https://github.com/startercode-dev/create-js-template.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/startercode-dev/js-template/issues"
+    "url": "https://github.com/startercode-dev/create-js-template/issues"
   },
-  "homepage": "https://github.com/startercode-dev/js-template#readme",
+  "homepage": "https://github.com/startercode-dev/create-js-template#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "eslint": "^8.30.0",
