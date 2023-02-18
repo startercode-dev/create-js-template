@@ -14,16 +14,19 @@ const runCommand = (command) => {
 
 const repoName = process.argv[2];
 
-const gitCloneCommand = `git clone --depth 1 https://github.com/startercode-dev/js-template.git ${repoName} && rm -rf ./${repoName}/.git`;
-const installDepsCommand = `cd ${repoName} && npm i`;
+const gitCloneCommand = `git clone --depth 1 https://github.com/startercode-dev/js-template.git ${repoName}`;
+const removeGitCommand = `rm -rf ./${repoName}/.git`;
+const installDepsCommand = `cd ${repoName} && npm i && git init`;
 
 console.log(`Cloning template into ${repoName}`);
 const gitClone = runCommand(gitCloneCommand);
 if (!gitClone) process.exit(1);
+const removeGit = runCommand(removeGitCommand);
 
 console.log(`Installing dependencies for ${repoName}`);
 const installDeps = runCommand(installDepsCommand);
 if (!installDeps) process.exit(1);
 
+console.log(`---------------------`);
 console.log(`ALL DONE! =]`);
 console.log(`'cd ${repoName}' to get started!`);
