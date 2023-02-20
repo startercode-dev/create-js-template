@@ -3,13 +3,13 @@
 const { execSync } = require('child_process');
 
 const runCommand = (command) => {
-    try {
-        execSync(`${command}`, { stdio: 'inherit' });
-    } catch (error) {
-        console.error(`Failed to execute ${command}`, e);
-        return false;
-    }
-    return true;
+  try {
+    execSync(`${command}`, { stdio: 'inherit' });
+  } catch (error) {
+    console.error(`Failed to execute ${command}`, e);
+    return false;
+  }
+  return true;
 };
 
 const repoName = process.argv[2];
@@ -32,4 +32,4 @@ if (!installDeps) process.exit(1);
 
 console.log(`----------------------`);
 console.log(`ALL DONE! =]`);
-console.log(`'cd ${repoName}' to get started!`);
+console.log(`'cd ${repoName}' and 'npm run dev' to get started!`);

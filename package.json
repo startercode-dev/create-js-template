@@ -1,7 +1,8 @@
 {
   "name": "create-js-template",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "js/html/scss starting template",
+  "keywords": ["javascript", "scss", "html", "parcel", "template"],
   "bin": "./bin/cli.js",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {

@@ -1,12 +1,11 @@
-# JS Template
+# Create JS Template
 
-Simple Javascript/HTML/SCSS template for getting ideas down on frontend focused projects.
+Simple Javascript/HTML/SCSS template, bundled with Parcel for frontend focused projects.
 
 ## Get Started
 
-Install all dependencies and get started:
-
-```
-npm i
+```sh
+npx create-js-template my-app
+cd my-app
 npm run dev
 ```
