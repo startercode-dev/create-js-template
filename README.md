@@ -6,6 +6,13 @@ Simple Javascript/HTML/SCSS template, bundled with Parcel for frontend focused p
 
 ```sh
 npx create-js-template my-app
+```
+or
+```sh
+npx create-js-template@latest my-app
+```
+then
+```sh
 cd my-app
 npm run dev
 ```
