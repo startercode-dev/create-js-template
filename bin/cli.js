@@ -32,4 +32,4 @@ if (!installDeps) process.exit(1);
 
 console.log(`----------------------`);
 console.log(`ALL DONE! =]`);
-console.log(`'cd ${repoName}' and 'npm run dev' to get started!`);
+console.log(`"cd ${repoName}" and "npm run dev" to get started!`);

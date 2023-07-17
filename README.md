@@ -1,6 +1,6 @@
 # Create JS Template
 
-Simple Javascript/HTML/SCSS template, bundled with Parcel for frontend focused projects.
+Simple Javascript/HTML/TailwindCSS template, bundled with Parcel for frontend focused projects.
 
 ## Get Started
 
