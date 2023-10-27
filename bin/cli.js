@@ -5,8 +5,8 @@ const { execSync } = require('child_process');
 const runCommand = (command) => {
   try {
     execSync(`${command}`, { stdio: 'inherit' });
-  } catch (error) {
-    console.error(`Failed to execute ${command}`, e);
+  } catch (err) {
+    console.error(`Failed to execute ${command}`, err);
     return false;
   }
   return true;
@@ -15,12 +15,17 @@ const runCommand = (command) => {
 const repoName = process.argv[2];
 
 const gitCloneCommand = `git clone --depth 1 https://github.com/startercode-dev/js-template.git ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm i`;
+const removeBinDirCommand = `cd ${repoName} && rm -rf ./bin`
 const localGitCommand = `cd ${repoName} && rm -rf ./.git && git init && git add . && git commit -m 'init'`;
+const installDepsCommand = `cd ${repoName} && npm i`;
 
 console.log(`Cloning template into ${repoName}`);
 const gitClone = runCommand(gitCloneCommand);
 if (!gitClone) process.exit(1);
+
+console.log(`Removing bin...`);
+const removeBinDir = runCommand(removeBinDirCommand);
+if (!removeBinDir) process.exit(1);
 
 console.log('Setting up local git...');
 const localGit = runCommand(localGitCommand);
