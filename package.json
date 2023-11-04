@@ -1,6 +1,6 @@
 {
     "name": "create-js-template",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "js/html/tailwindcss starting template",
     "keywords": [
         "javascript",
@@ -28,7 +28,6 @@
     },
     "homepage": "https://github.com/startercode-dev/create-js-template#readme",
     "devDependencies": {
-        "autoprefixer": "^10.4.16",
         "eslint": "^8.30.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.5.0",
